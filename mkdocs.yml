@@ -1,0 +1,71 @@
+site_name: 나의 문서 사이트
+site_description: MkDocs로 만든 문서 사이트
+site_author: Myeongcheol
+
+# Theme 설정
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+
+# 네비게이션 구조
+nav:
+  - 홈: index.md
+  - 시작하기:
+    - 개요: getting-started.md
+    - 설치 가이드: installation.md
+    - 첫 프로젝트: first-project.md
+    - 기본 설정: configuration.md
+  - 가이드:
+    - 기본 사용법: guide.md
+    - 테마 가이드: themes.md
+    - 플러그인 가이드: plugins.md
+    - 배포 가이드: deployment.md
+  - 고급 기능:
+    - 고급 설정: advanced-features.md
+    - 완전한 설정: complete-configuration.md
+  - API 문서:
+    - 함수 참조: api.md
+    - 클래스 참조: classes.md
+    - CLI 참조: cli-reference.md
+  - 참고 자료:
+    - 문제 해결: troubleshooting.md
+    - 자주 묻는 질문: faq.md
+    - 마이그레이션: migration.md
+    - 모범 사례: best-practices.md
+
+# Markdown 확장
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+# 플러그인
+plugins:
+  - search:
+      lang: ko

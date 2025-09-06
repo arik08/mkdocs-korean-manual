@@ -1,6 +1,12 @@
-site_name: 나의 문서 사이트
-site_description: MkDocs로 만든 문서 사이트
-site_author: Myeongcheol
+site_name: MkDocs 한국어 가이드
+site_description: MkDocs를 사용한 문서 사이트 구축 완전 가이드
+site_author: arik08
+site_url: https://arik08.github.io/mkdocs-korean-manual/
+
+# GitHub 정보
+repo_name: arik08/mkdocs-korean-manual
+repo_url: https://github.com/arik08/mkdocs-korean-manual
+edit_uri: edit/main/docs/
 
 # Theme 설정
 theme:
